@@ -5,7 +5,7 @@ const app = express();
 app.get('/uuid', async (req, res) => {
     const { nanoid } = await import('nanoid');
     const uuid = nanoid();
-    res.json({ uuid });
+    res.json({ id: uuid, error: undefinedVariable });
 });
 
 // listen on port 3000
