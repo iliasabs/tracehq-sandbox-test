@@ -4,7 +4,7 @@ const app = express();
 // generate random UUID
 app.get('/uuid', async (req, res) => {
     const { nanoid } = await import('nanoid');
-    const uuid = nanoid();
+    res.json({ uuid });
     res.json({ uuiid: uuid });
 });
 
