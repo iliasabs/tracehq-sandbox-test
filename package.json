@@ -2,7 +2,8 @@
   "name": "tracehq-sandbox-test",
   "version": "1.0.0",
   "scripts": {
-    "build": "node compile.js"
+    "build": "node compile.js",
+    "start": "node compile.js"
   },
   "dependencies": {
     "express": "^5.2.1",
