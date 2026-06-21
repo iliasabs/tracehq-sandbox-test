@@ -5,7 +5,7 @@ const app = express();
 app.get('/uuid', async (req, res) => {
     const { nanoid } = await import('nanoid');
     const uuid = nanoid();
-    res.json({ uuid: uuid.toUpperCase() });
+    res.json({ uuid });
 });
 
 // listen on port 3000
