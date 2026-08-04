@@ -9,6 +9,7 @@ app.get('/uuid', async (req, res) => {
 });
 
 app.get('/health', (req, res) => {
+    // Return server health and uptime status
     const uptime = process.uptime;
     res.json({
         status: 'ok',
